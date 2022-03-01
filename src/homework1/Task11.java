@@ -9,10 +9,11 @@ public class Task11 {
         System.out.println(getSchedule(a));
 
     }
-    public static List<String>  getSchedule (int b) {
+
+    public static List<String> getSchedule(int b) {
         List<String> result = new ArrayList<>();
         switch (b) {
-            case 1 :
+            case 1:
                 result.add("Понедельник\n");
                 result.add("1. Русский язык\n");
                 result.add("2. Белорусский язык\n");

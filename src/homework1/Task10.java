@@ -36,16 +36,13 @@ public class Task10 {
         }
 
 
-        if ((width1+width2)<=width3 && length1<=length3 && length2<=length3 ){
+        if ((width1 + width2) <= width3 && length1 <= length3 && length2 <= length3) {
             System.out.println("Дома поместятся на учаске");
-        }
-        else if ((length1+length2)<=length3 && width1<=width3 && width2<=width3) {
+        } else if ((length1 + length2) <= length3 && width1 <= width3 && width2 <= width3) {
             System.out.println("Дома поместятся на участке");
-        }
-        else if ((length1+width2)<length3 && width1<=width3 && length2<=width3) {
+        } else if ((length1 + width2) < length3 && width1 <= width3 && length2 <= width3) {
             System.out.println("Дома помещаются на участке");
-        }
-        else{
+        } else {
             System.out.println("Дома не помещаются на участке");
         }
     }
