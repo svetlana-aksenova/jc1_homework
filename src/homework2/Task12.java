@@ -15,17 +15,17 @@ public class Task12 {
         int j = 9;
         int k = 10;
 
-        System.out.println(calculateFactjrial(l));
-        System.out.println(calculateFactjrial(a));
-        System.out.println(calculateFactjrial(b));
-        System.out.println(calculateFactjrial(c));
-        System.out.println(calculateFactjrial(d));
-        System.out.println(calculateFactjrial(e));
-        System.out.println(calculateFactjrial(f));
-        System.out.println(calculateFactjrial(g));
-        System.out.println(calculateFactjrial(h));
-        System.out.println(calculateFactjrial(j));
-        System.out.println(calculateFactjrial(k));
+        System.out.println(l + "!= " + calculateFactjrial(l));
+        System.out.println(a + "!= " + calculateFactjrial(a));
+        System.out.println(b + "!= " + calculateFactjrial(b));
+        System.out.println(c + "!= " + calculateFactjrial(c));
+        System.out.println(d + "!= " + calculateFactjrial(d));
+        System.out.println(e + "!= " + calculateFactjrial(e));
+        System.out.println(f + "!= " + calculateFactjrial(f));
+        System.out.println(g + "!= " + calculateFactjrial(g));
+        System.out.println(h + "!= " + calculateFactjrial(h));
+        System.out.println(j + "!= " + calculateFactjrial(j));
+        System.out.println(k + "!= " + calculateFactjrial(k));
 
     }
 

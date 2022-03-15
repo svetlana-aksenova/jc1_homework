@@ -1,11 +1,10 @@
 package homework2;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import static java.lang.Math.sqrt;
 
 public class Task15 {
     public static void main(String[] args) {
+
         int i, j;
         int counter = 0;
 
