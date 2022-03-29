@@ -2,7 +2,7 @@ package homework1;
 
 public class task6 {
     public static void main(String[] args) {
-        int a = 234;
+        int a = 237;
         boolean d = define(a);
         System.out.println(d);
 

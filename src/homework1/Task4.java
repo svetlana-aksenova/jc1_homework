@@ -3,8 +3,8 @@ package homework1;
 public class Task4 {
     public static void main(String[] args) {
 
-        int a = 16;
-        int b = 38;
+        int a = 25;
+        int b = 3;
         int c = calculate(a, b);
         System.out.println(c);
 

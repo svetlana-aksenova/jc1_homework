@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Atm myAtm = new Atm(40, 10, 5);
+        Atm myAtm = new Atm(100, 11, 5);
 
         System.out.println(myAtm.getTotal());
         System.out.println(myAtm.withdrawMoney());

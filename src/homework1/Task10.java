@@ -4,12 +4,12 @@ public class Task10 {
     public static void main(String[] args) {
         double a, b, c, d, e, f;
         double length1, length2, length3, width1, width2, width3;
-        a = 5;
-        b = 7;
-        c = 4;
-        d = 3.5;
-        e = 9;
-        f = 10;
+        a = 2;
+        b = 1;
+        c = 2;
+        d = 2;
+        e = 3;
+        f = 2;
 
         if (a > b) {
             length1 = a;
