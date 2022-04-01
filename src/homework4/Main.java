@@ -29,10 +29,17 @@ public class Main {
 
         String s4 = enterString(); //Task29
         StringBuilder sb4 = findHex(s4);
-        System.out.println("Задание 29. Шестнадцатиричные числа: " + sb4);
+        StringBuilder strB = new StringBuilder();
 
-        String s5 = enterString();
+        if (sb4.length() == 0) {
+            System.out.println("В строке нет шестнадцатиричных чисел");
+        } else {
+            System.out.println("Задание 29. Шестнадцатиричные числа: " + sb4);
+        }
 
+
+        String s5 = enterString(); //Task 30
+        System.out.println("Задание 30. Строка после замены тегов: " + replaceTeg(s5));
 
     }
 
@@ -63,4 +70,14 @@ public class Main {
     }
 
 
+    public static String replaceTeg(String str) {
+        Pattern p = Pattern.compile("<[Pp].*?>");
+        Matcher m = p.matcher(str);
+        while (m.find()) {
+            str = str.replaceAll("<[Pp].*?>", "<p>");
+
+        }
+        return str;
+
+    }
 }
