@@ -2,7 +2,7 @@ package homework5.task34;
 
 public class HeadOfDepartment extends Director {
 
-    public String department;
+    protected String department;
 
     public HeadOfDepartment() {
     }

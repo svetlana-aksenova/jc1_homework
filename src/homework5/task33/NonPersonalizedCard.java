@@ -2,7 +2,7 @@ package homework5.task33;
 
 public class NonPersonalizedCard extends Card {
 
-    int cvvCod;
+    protected int cvvCod;
 
     public NonPersonalizedCard() {
 

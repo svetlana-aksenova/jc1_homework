@@ -2,7 +2,7 @@ package homework5.task33;
 
 public class PersonalizedCard extends NonPersonalizedCard implements CreditCard {
 
-    String name;
+    protected String name;
 
     public PersonalizedCard() {
 

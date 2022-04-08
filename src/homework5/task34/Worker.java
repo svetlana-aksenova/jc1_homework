@@ -2,7 +2,7 @@ package homework5.task34;
 
 public class Worker extends HeadOfDepartment {
 
-    int hoursWorked;
+    protected int hoursWorked;
 
     public Worker() {
 

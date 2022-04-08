@@ -9,15 +9,7 @@ public class Task15 {
         int counter = 0;
 
         for (i = 50; i <= 70; i++) {
-            int a = (int) sqrt(i) + 1;
-            boolean isPrime = true;
-
-            for (j = 2; j <= a; j++) {
-                if (i % j == 0) {
-                    isPrime = false;
-                }
-            }
-            if (isPrime) {
+            if (isPrime(i)) {
                 counter++;
             }
 
@@ -28,5 +20,14 @@ public class Task15 {
 
 
         }
+    }
+
+    private static boolean isPrime(int a) {
+        for (int j = 2; j <= (int) sqrt(a) + 1; j++) {
+            if (a % j == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }

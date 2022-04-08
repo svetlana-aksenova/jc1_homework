@@ -2,7 +2,7 @@ package homework5.task33;
 
 public class ChildrenCard extends PersonalizedCard {
 
-    public ChildrenCard() {
+    protected ChildrenCard() {
 
     }
 

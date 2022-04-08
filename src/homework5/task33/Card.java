@@ -2,10 +2,10 @@ package homework5.task33;
 
 public abstract class Card {
 
-    long cardNumber;
-    long accountNumber;
-    String paymentSystem;
-    String validThru;
+    protected long cardNumber;
+    protected long accountNumber;
+    protected String paymentSystem;
+    protected String validThru;
 
     public Card() {
 

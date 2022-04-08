@@ -2,8 +2,8 @@ package homework5.task34;
 
 public class Director implements Calculateable {
 
-    public String name;
-    public double salary;
+    protected String name;
+    protected double salary;
 
     public Director() {
     }
