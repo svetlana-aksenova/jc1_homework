@@ -4,7 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Garage<Car> car1 = new Garage<>();
+        Garage<Car> car = new Garage<>();
+        System.out.println(car.getName());
+
+        Garage<Motorcycle> moto = new Garage<>();
+        System.out.println(moto.getName());
 
 
     }

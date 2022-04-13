@@ -2,9 +2,9 @@ package homework5.task38;
 
 public abstract class Vehicle {
 
-    String name;
+    private String name;
 
-    String number;
+    private String number;
 
     public Vehicle(String name, String number) {
         this.name = name;
