@@ -1,9 +1,8 @@
-package homework6.Task42;
+package homework6.task42;
 
 import java.util.HashMap;
-import java.util.StringTokenizer;
 
-import static homework6.Task42.TextString.*;
+import static homework6.task42.TextString.*;
 
 public class Main {
 

@@ -1,6 +1,6 @@
-package homework6.Task45;
+package homework6.task45;
 
-import homework6.Task44.ScannerException;
+import homework6.task44.ScannerException;
 
 import java.util.Scanner;
 
@@ -18,7 +18,6 @@ public class Main {
             b = getSquareRoot(a);
         } catch (ScannerException e) {
             System.out.println(e.getMessage());
-            ;
         } catch (Exception e) {
             e.printStackTrace();
         }

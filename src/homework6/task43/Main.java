@@ -1,4 +1,4 @@
-package homework6.Task43;
+package homework6.task43;
 
 public class Main {
 

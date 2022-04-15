@@ -1,10 +1,8 @@
-package homework6.Task42;
+package homework6.task42;
 
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class TextString {
 

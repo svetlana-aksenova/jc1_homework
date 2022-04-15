@@ -1,4 +1,4 @@
-package homework6.Task44;
+package homework6.task44;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class Main {
         try {
             int x = enterData();
             if (x <= 0) {
-                throw new ScannerException("Enter number>0");
+                throw new ScannerException("Error! Enter number>0");
             }
         } catch (ScannerException e) {
             System.out.println(e.getMessage());
