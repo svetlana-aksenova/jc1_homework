@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Count {
 
-    static int countPunctuatioMarks(String s) {
+    static int countPunctuationMarks(String s) {
         int count = 0;
         Pattern p = Pattern.compile("[\\.,:;\\-!?()\"]");
         Matcher m = p.matcher(s);
@@ -17,7 +17,7 @@ public class Count {
 
     static int countWords(String s) {
         int count = 0;
-        Pattern p = Pattern.compile("\\s*\\(?\"?[А-Яа-яЁёA-Za-z0-9]+\\)?[\\.,:;\\?!)\"]?\\s*");
+        Pattern p = Pattern.compile("\\s*\\(?\"?[А-Яа-яЁёA-Za-z0-9\\-]+\\)?[\\.,:;\\?!)\"]?\\s*");
         Matcher m = p.matcher(s);
         while (m.find()) {
             count++;

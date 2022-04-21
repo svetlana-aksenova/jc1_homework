@@ -1,7 +1,6 @@
 package homework7.task47;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Scanner;
 
 public class TextReading {
@@ -20,10 +19,26 @@ public class TextReading {
             s = scanner.nextLine();
         } catch (FileNotFoundException e) {
             System.out.println("Error: " + e.getMessage());
-
         }
-        return s;
+        return s; //TODO: исправить метод,чтобы считывался весь файл, а не только первая сторока
     }
+
+    //*public StringBuilder readFile(String pathToFile) {
+    //    StringBuilder sb = new StringBuilder();
+    //    FileReader fr = null;
+    //    try {
+    //        fr = new FileReader(pathToFile);
+    //        int c;
+    //        while ((c= fr.read()) != -1) {
+    //            sb.append((char)c);
+    //        }
+    //
+    //    } catch (FileNotFoundException e) {
+    //        System.out.println("Error: file not found " + e.getMessage());
+    //    } catch (IOException e) {
+    //        System.out.println("Error " + e.getMessage());
+    //    }
+    //    return sb;*/
 
 
 }
