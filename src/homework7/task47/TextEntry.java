@@ -11,21 +11,20 @@ public class TextEntry {
         this.pathToFile = pathToFile;
     }
 
-    public void writeText(String text) {
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(pathToFile);
-            fos.write(textToByte(text));
-            System.out.println("File written successfully");
-
+    public void writeText() {
+        String str;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter text. Input terminator string 'stop' ");
+        try (FileWriter fw = new FileWriter(pathToFile)) {
+            do {
+                System.out.print(": ");
+                str = br.readLine();
+                if (str.compareTo("stop") == 0) break;
+                str = str + "\r\n";
+                fw.write(str);
+            } while (str.compareTo("stop") != 0);
         } catch (IOException e) {
-            System.out.println("Error " + e.getMessage());
-        } finally {
-            try {
-                fos.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            System.out.println("Error: " + e.getMessage());
         }
     }
 

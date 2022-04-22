@@ -6,7 +6,6 @@ import homework7.task47.TextReading;
 import java.util.ArrayList;
 
 import static homework7.task47.TextEntry.enterPath;
-import static homework7.task47.TextEntry.enterText;
 import static homework7.task48.Number.*;
 import static homework7.task48.Text.*;
 
@@ -15,12 +14,11 @@ public class Main {
     public static void main(String[] args) {
 
         String path = enterPath();
-        String text = enterText();
         TextEntry textEntry = new TextEntry(path);
-        textEntry.writeText(text);
+        textEntry.writeText();
 
         TextReading textReading = new TextReading(path);
-        String s = textReading.readFile(path);
+        String s = String.valueOf(textReading.readFile(path));
 
         StringBuilder sb = deleteWords(s);
         String str = stringBuilderToString(sb);
