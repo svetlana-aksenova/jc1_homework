@@ -33,6 +33,4 @@ public class Number {
         ArrayList<Integer> filteredList = list.stream().distinct().collect(Collectors.toCollection(ArrayList::new));
         return filteredList;
     }
-
-
 }

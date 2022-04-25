@@ -13,13 +13,12 @@ public class TextReading {
     public StringBuilder readFile(String pathToFile) {
         String s = "";
         StringBuilder sb = new StringBuilder();
-
         try (BufferedReader br = new BufferedReader(new FileReader(pathToFile))) {
             while (true) {
                 try {
                     if (!((s = br.readLine()) != null)) break;
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    System.out.println("Error: " + e.getMessage());
                 }
                 sb.append(s + " ");
             }
@@ -27,7 +26,5 @@ public class TextReading {
             System.out.println("Error: " + e.getMessage());
         }
         return sb;
-
-
     }
 }

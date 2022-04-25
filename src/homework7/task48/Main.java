@@ -31,7 +31,5 @@ public class Main {
         System.out.println("All numbers: " + list);
         System.out.println("Sum of all numbers: " + sum);
         System.out.println("Numbers after removing duplicate numbers: " + filteredList);
-
-
     }
 }

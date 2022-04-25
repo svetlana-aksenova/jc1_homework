@@ -48,13 +48,10 @@ public class FilesCatalogs {
 
     public ArrayList<String> getFiles() {
         return files;
-
     }
 
     public ArrayList<String> getCatalogs() {
         return catalogs;
-
     }
-
 
 }

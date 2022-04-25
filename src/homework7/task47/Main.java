@@ -19,7 +19,5 @@ public class Main {
 
         System.out.println("Total punctuation in file: " + countPunctuationMarks(s));
         System.out.println("Total words in file: " + countWords(s));
-
-
     }
 }

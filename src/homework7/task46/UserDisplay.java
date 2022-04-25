@@ -25,7 +25,6 @@ public class UserDisplay {
         }
     }
 
-
     public static void printCatalogs(ArrayList<String> list) {
         if (list.isEmpty()) {
             System.out.println("Directory does not contain catalogs");
@@ -33,11 +32,8 @@ public class UserDisplay {
             System.out.println("Directory contains next catalogs: ");
             for (String item : list) {
                 System.out.println(item);
-
             }
         }
     }
-
-
 }
 

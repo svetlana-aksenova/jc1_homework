@@ -25,6 +25,4 @@ public class Text {
         String[] array = s.split(" ");
         return array;
     }
-
-
 }
