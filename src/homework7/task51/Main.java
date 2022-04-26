@@ -2,7 +2,6 @@ package homework7.task51;
 
 import java.io.File;
 import java.util.ArrayList;
-
 import static homework7.task47.TextEntry.enterPath;
 import static homework7.task50.Data.*;
 

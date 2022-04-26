@@ -22,7 +22,7 @@ public class ListOfNumbers {
         return size;
     }
 
-    private int getRandomNumber() {
+    public int getRandomNumber() {
         Random random = new Random();
         int a = random.nextInt(100);
         return a;
@@ -39,6 +39,7 @@ public class ListOfNumbers {
         }
         return list;
     }
+
 
     public static double getAverage(ArrayList<Integer> list) {
         double average = getSum(list) / list.size();
