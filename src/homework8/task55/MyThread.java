@@ -1,6 +1,6 @@
 package homework8.task55;
 
-public class MyThread implements Runnable{
+public class MyThread implements Runnable {
 
     private Go go;
     private String threadName;

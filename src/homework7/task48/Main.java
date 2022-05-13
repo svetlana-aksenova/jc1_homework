@@ -22,14 +22,18 @@ public class Main {
 
         StringBuilder sb = deleteWords(s);
         String str = stringBuilderToString(sb);
-        String[] array = textToArray(str);
-        int[] nums = stringArrayToInt(array);
-        int sum = countSum(nums);
-        ArrayList<Integer> list = intArrayToList(nums);
+        if (str.equals("")) {
+            System.out.println("Text does not contain numbers");
+        } else {
+            String[] array = textToArray(str);
+            int[] nums = stringArrayToInt(array);
+            int sum = countSum(nums);
+            ArrayList<Integer> list = intArrayToList(nums);
 
-        ArrayList<Integer> filteredList = removeDuplicateNumbers(list);
-        System.out.println("All numbers: " + list);
-        System.out.println("Sum of all numbers: " + sum);
-        System.out.println("Numbers after removing duplicate numbers: " + filteredList);
+            ArrayList<Integer> filteredList = removeDuplicateNumbers(list);
+            System.out.println("All numbers: " + list);
+            System.out.println("Sum of all numbers: " + sum);
+            System.out.println("Numbers after removing duplicate numbers: " + filteredList);
+        }
     }
 }

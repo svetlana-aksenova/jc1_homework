@@ -16,7 +16,6 @@ public class Main {
         StringBuilder sb = textReading.readFile(path);
 
         String s = sb.toString();
-
         System.out.println("Total punctuation in file: " + countPunctuationMarks(s));
         System.out.println("Total words in file: " + countWords(s));
     }

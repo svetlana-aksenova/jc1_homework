@@ -31,10 +31,10 @@ public class Deadlock {
         System.out.println(Thread.currentThread().getName() + " start");
         synchronized (object2) {
             try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                System.out.println("Error: " + e.getMessage());
+            }
             synchronized (object3) {
             }
         }
