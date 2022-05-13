@@ -10,6 +10,7 @@ public class UserDisplay {
     }
 
     public static String enterPath() {
+        System.out.println("Enter path to file");
         return new Scanner(System.in).nextLine();
     }
 

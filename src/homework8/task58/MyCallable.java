@@ -1,9 +1,7 @@
 package homework8.task58;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
 import java.util.concurrent.Callable;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ThreadLocalRandom;
@@ -38,7 +36,7 @@ public class MyCallable implements Callable<CopyOnWriteArrayList<String>> {
                     try {
                         file.createNewFile();
                     } catch (IOException e) {
-                        e.printStackTrace();
+                        System.out.println("Error: " +e.getMessage());
                     }
                 }
                 FileWriter fw = null;
@@ -49,16 +47,16 @@ public class MyCallable implements Callable<CopyOnWriteArrayList<String>> {
                     }
                     fw.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    System.out.println("Error: " + e. getMessage());
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Error: " + e. getMessage());
             }
         }
         try {
             Thread.sleep(getSeconds());
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.out.println("Error: " + e.getMessage());
         }
         CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
         File f = new File(path);
